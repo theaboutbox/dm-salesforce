@@ -130,7 +130,7 @@ module DataMapperSalesforce
           when "SERVER_UNAVAILABLE"
             raise Connection::ServerUnavailable, "The salesforce server is currently unavailable"
           else
-            raise Connection::UnknownStatusCode, "Got an unknown statusCode: #{error.statusCode.inspect}"
+            raise Connection::UnknownStatusCode, "Got an unknown statusCode: #{error.statusCode.inspect} - #{error.message}"
           end
         end
       end
