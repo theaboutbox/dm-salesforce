@@ -5,7 +5,6 @@ require 'bundler'
 require 'date'
 require 'pp'
 
-Bundler.require_env
 require File.dirname(__FILE__) + '/lib/dm-salesforce'
 
 GEM = "dm-salesforce"
